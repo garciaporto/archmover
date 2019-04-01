@@ -1,0 +1,26 @@
+.bg-dk-beige.overflow.mobile-top-padding
+  .container.p-0
+    .row
+      .col-md-3.p-0
+        .full-size.hide-md
+          .center-box
+            include ../partials/_nav-contact
+      .col
+        .header-contact
+        .content-contact.pt-5.px-4
+          .row
+            .col-md-7
+              form(action="mail.php" method="POST")
+                input.form-style(type="text" name='name' placeholder='Nombre y Apellido')
+                input.form-style(type="email" name='email' placeholder='e-mail')
+                textarea.form-style.all-around(name="message" placeholder='Ingresa tu mensaje')
+                input.text-uppercase.form-submit(type="submit" value='enviar')
+            .col-md.align-self-bottom
+              ul.list-unstyled.mb-contact
+                li
+                  a.link-contact(href="https://goo.gl/maps/qkRSiHr3dK32") Av. Beethoven con calle Sorbona, Torre Financiera, piso 3, of 3C, Caracas.
+                li
+                  a.link-contact(href="tel:+58-212-751-4824") +58-212-751-4824
+                li
+                  a.link-contact(href="mailto:contacto@wernerarchmover.com") contacto@wernerarchmover.com
+          

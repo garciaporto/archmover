@@ -1,0 +1,49 @@
+extends ../partials/layout.pug
+block content
+  section#index
+    .container-fluid.p-0
+      .full-size.full-bg
+        .traslucid-olive
+          .center-box
+            ul.list-unstyled.text-center.text-uppercase
+              li.brand-small arquitecto
+              li.brand werner moser
+              li
+                .dotted-line
+              li.nav-link(data-menuanchor='proyectos')
+                a(href="#proyectos") proyectos
+              li.nav-link(data-menuanchor='acerca')
+                a(href="#acerca") acerca
+              li.nav-link(data-menuanchor='contacto')
+                a(href="#contacto") contacto
+  section#proyectos
+    include ../partials/_proyectos
+    #aguada.modal(tabindex='-1' role='dialog' aria-hidden='true')
+      .modal-dialog.modal-full(role='document')
+        .modal-content
+          .modal-body
+            include ../partials/_aguada
+    #barinitas.modal(tabindex='-1' role='dialog' aria-hidden='true')
+      .modal-dialog.modal-full(role='document')
+        .modal-content
+          .modal-body
+            include ../partials/_barinitas
+    #loma.modal(tabindex='-1' role='dialog' aria-hidden='true')
+      .modal-dialog.modal-full(role='document')
+        .modal-content
+          .modal-body
+            include ../partials/_loma
+    #montana.modal(tabindex='-1' role='dialog' aria-hidden='true')
+      .modal-dialog.modal-full(role='document')
+        .modal-content
+          .modal-body
+            include ../partials/_montana
+    #pico.modal(tabindex='-1' role='dialog' aria-hidden='true')
+      .modal-dialog.modal-full(role='document')
+        .modal-content
+          .modal-body
+            include ../partials/_pico
+  section#acerca
+    include ../partials/_acerca
+  section#contacto
+    include ../partials/_contacto

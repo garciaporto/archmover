@@ -1,0 +1,23 @@
+nav.navbar.navbar-expand-md.text-uppercase.wrap
+  .navbar-brand
+    .brand.inverted.section-brand.hide-md(data-menuanchor='index')
+      a.link-brand-unstyled(href="#index") werner
+        br 
+        | moser
+    .brand.inverted.section-brand.show-md werner moser
+  button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navMenu', aria-controls='navMenu', aria-expanded='false', aria-label='Navigation')
+    i.fa.fa-bars
+  .dotted-line.dark.left.hide-md.navbar-expand-md.mr-5
+  #navMenu.collapse.navbar-collapse
+    ul.nav.column
+      li.nav-link.left(data-menuanchor='proyectos')
+        a(href="#proyectos") proyectos
+        ul.sub-menu
+          li.nav-link.left
+            a(href="#") ejecutados
+          li.nav-link.left
+            a(href="#") sin ejecutar
+      li.nav-link.left(data-menuanchor='acerca')
+        a(href="#acerca") acerca
+      li.nav-link.left(data-menuanchor='contacto')
+        a(href="#contacto") contacto

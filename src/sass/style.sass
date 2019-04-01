@@ -1,0 +1,313 @@
+@import 'variables'
+
+@media screen and (max-width: $xl-view) and (min-width: $md-view)
+  .project-data
+    padding: 2em !important
+@media screen and (min-width: $md-view)
+  .show-md
+    display: none
+@media screen and (max-width: $md-view)
+  .hide-md
+    display: none
+  .bg-lg-beige
+    background-color: white !important
+  .bg-dk-beige
+    background-color: white !important
+  .mobile-top-padding
+    padding-top: 3em !important
+  .dk-aqua-xs
+    color: $dk-aqua
+
+//  ==============================================
+//  GENERAL
+//  ==============================================
+html
+  scroll-behavior: smooth
+a
+  color: white
+  text-decoration: none
+  background-color: transparent
+  -webkit-text-decoration-skip: objects
+  +transicion(all 300ms ease)
+a:hover
+  text-decoration: none !important
+  color: $lg-beige
+p
+  font-family: 'Open Sans', sans-serif
+  font-weight: 300
+  font-size: 0.9em
+  line-height: 1.7em
+h1, h2, h3, h4, h5, h6
+  font-family: 'Open Sans', sans-serif !important
+  font-weight: 300 !important
+.disabled
+  pointer-events: none
+  cursor: default
+.full-size
+  width: 100%
+  height: 100vh
+.full-bg
+  background: url('http://lorempixel.com/output/city-q-g-1920-1080-8.jpg')
+  background-size: cover
+.traslucid-olive
+  background: radial-gradient($olive85, $dkolive85)
+  height: 100%
+  width: 100%
+.center-box
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  width: 100%
+  height: 100%
+.wrap
+  flex-wrap: wrap !important
+.column
+  flex-direction: column
+
+//  ==============================================
+//  BOOTSTRAP OVERWRITED CLASSES
+//  ==============================================
+.modal-dialog
+  max-width: 100% !important
+  margin: 0px !important
+  height: 100%
+.modal-body
+  padding: 0px !important
+.modal-content
+  background-color: transparent !important
+//  ==============================================
+//  NAVIGATION
+//  ==============================================
+.olive
+  color: $olive !important
+a.olive:hover
+  color: $lg-beige !important
+.lg-aqua
+  color: $lg-aqua !important
+.white
+  color: white !important
+.dk-aqua
+  color: $dk-aqua
+.lg-beige
+  color: $lg-beige
+.dk-beige
+  color: $dk-beige
+.dotted-line
+  content: ""
+  border-top: 2px dotted $lg-beige
+  margin: 1em auto
+  width: 80%
+.dotted-line.left
+  margin: 1em 0
+  width: 100%
+.dotted-line.dark
+  border-color: $dk-beige
+.dotted-line.white
+  border-color: white
+.brand
+  font-family: 'Oswald', sans-serif
+  font-size: 3em
+  margin-top: -0.4em
+  margin-bottom: -0.2em
+  color: white
+.brand.inverted
+  color: $olive
+  font-size: 1.5em
+  line-height: 1
+.brand-small
+  font-family: 'Open Sans', sans-serif
+  font-size: 0.8em
+  letter-spacing: 1em
+  color: $lg-beige
+  margin-bottom: 1.3em
+.nav-link
+  font-family: 'Open Sans', sans-serif
+  font-size: 0.75em
+  line-height: 2.3em
+  letter-spacing: 0.4em
+  font-weight: 600
+  a
+    color: white
+  a:hover
+    color: $lg-beige
+.nav-link.left
+  line-height: 1em
+  letter-spacing: 0.3em
+  padding-left: 0
+  padding-right: 0
+  a
+    color: $dk-aqua
+  a:hover
+    color: $lg-aqua
+  li:first-child
+    padding-top: 16px
+  li:last-child
+    padding-bottom: 0
+.sub-menu
+  padding-left: 16px
+  font-size: 1.3em
+.link-brand-unstyled
+  color: $olive
+.link-brand-unstyled:hover
+  color: $olive
+//  ==============================================
+//  PROJECTS SECTION
+//  ==============================================
+.overflow
+  overflow-y: scroll
+.square
+  width: 100%
+  padding-bottom: 100%
+  position: relative
+.square-content
+  position: absolute
+  display: flex
+  justify-content: center
+  align-items: center
+  width: 100%
+  height: 100%
+  flex-direction: column
+  padding: 1.5em
+.overlay
+  position: absolute
+  top: 0
+  bottom: 0
+  left: 0
+  right: 0
+  height: 100%
+  width: 100%
+  opacity: 0
+  transition: .5s ease
+  background-color: $lg-aqua80
+.square:hover .overlay
+  opacity: 1
+.gallery
+  position: absolute
+  display: block
+  width: 100%
+  height: auto
+.text-gallery
+  font-family: 'Open Sans', sans-serif
+  font-weight: 300
+  font-size: 0.7em
+  color: $lg-beige
+.link-gallery
+  display: block
+  width: 100%
+  height: 100%
+.title-gallery
+  font-family: 'Open Sans', sans-serif
+  font-weight: 700
+  font-size: 0.7em
+  color: white
+.bg-lg-beige
+  height: 100vh
+  width: 100vw
+  background-color: $bg-beige
+.bg-olive
+  background-color: $olive
+.bg-lg-aqua
+  background-color: $bg-lg-aqua
+.bg-beige
+  background-color: $bg-beige
+.bg-lg-gray
+  background-color: $bg-lg-gray
+
+//  ==============================================
+//  PROJECTS DETAILS SECTION
+//  ==============================================
+.image-fit
+  object-fit: cover
+  height: 100%
+  width: 100%
+  max-height: 100vh
+.project-data
+  height: 100vh
+  padding: 5rem
+ul.images
+  margin: 0
+  padding: 0
+  white-space: nowrap
+  overflow-x: auto
+  list-style: none
+  height: 100%
+ul.images li
+  display: inline-flex
+.title-detail
+  font-family: 'Oswald', sans-serif !important
+  font-size: 3em
+.arrow
+  position: absolute
+  top: 50%
+  right: 5%
+  transform: translateY(-50%)
+  font-size: 4em
+  color: white
+  text-shadow: 0 0 100px $olive
+.close
+  position: absolute !important
+  top: 5% !important
+  right: 5% !important
+  font-size: 2em !important
+  transform: translate(-50%,-50%)
+#aguada, #barinitas, #loma, #montana, #pico
+  display: none
+#project-images
+  background-color: white
+//  ==============================================
+//  CONTACT SECTION
+//  ==============================================
+.bg-dk-beige
+  height: 100vh
+  width: 100vw
+  background: $bg-dk-beige
+.header-contact
+  background: url('../img/ccs.jpg')
+  background-size: cover
+  background-position: center
+  height: 50vh
+  width: 100%
+.content-contact
+  background: white
+  height: 50vh
+  width: 100%
+.align-self-bottom
+  align-self: flex-end
+.form-style
+  display: block
+  width: 100%
+  height: calc(2.25rem + 2px)
+  padding: .375rem .75rem
+  font-size: 0.9em
+  line-height: 1.5em
+  color: black
+  background-color: transparent
+  border: 0px
+  border-bottom: 1px solid $olive
+  margin: 1.5em 0
+  font-family: 'Open Sans', sans-serif
+  font-weight: 300
+.form-style.all-around
+  border: 1px solid $olive !important
+textarea
+  height: 15em !important
+  resize: none !important
+.form-submit
+  background: transparent
+  border: 0
+  font-family: 'Open Sans', sans-serif
+  font-weight: 300
+  font-size: 1.1em
+  letter-spacing: .1em
+  padding: .5em 0
+  color: $olive
+.link-contact
+  color: $olive
+  font-family: 'Open Sans', sans-serif
+  font-weight: 300
+.link-contact:hover
+  color: $lg-aqua
+.mb-contact
+  margin-bottom: 3.7em !important
+  margin-top: 3em !important
